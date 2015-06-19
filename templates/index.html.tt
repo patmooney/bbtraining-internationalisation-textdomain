@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>[% translate("Jungle is massive") %]</h3>
+        <h3>[% message %]</h3>
+    </body>
+</html>
