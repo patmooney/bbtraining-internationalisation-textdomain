@@ -38,8 +38,7 @@ sub index {
             # doesn't need to know about it
             translate => sub {
                 $self->translations()->__( @_ );
-            },
-            message => "Hello World"
+            }
         }
     ) || $self->template_error();
 }
