@@ -39,6 +39,12 @@ sub index {
             translate => sub {
                 $self->translations()->__( @_ );
             }
+            # Use this method for translating strings which contain placeholders
+            # e.g. [% translate_x("Hello {name}", name="David") %]
+            translate_x => sub {
+                my ( $key, $variable_ref ) = @_);
+                $self->translations()->__x( $key, %$variable_ref );
+            }
         }
     ) || $self->template_error();
 }

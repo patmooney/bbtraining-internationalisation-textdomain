@@ -26,7 +26,19 @@ Using [Locale::TextDomain](http://search.cpan.org/dist/libintl-perl/lib/Locale/T
 Tips:
 
     1. Look at fr.po
-    2. Look at the first gettext comman below
+    2. Look at the msgfmt command below
+
+#### Bonus
+
+See if you can translate the following string using placeholders
+
+"Hello David"
+
+Keep in mind that the name David doesn't need to be translated and is likely to be a variable
+
+Tips:
+
+    1. Look at the translate_x method in lib/MyApp.pm
 
 ### gettext commands
 
